@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/cd_background"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtcddtitle"
+        android:text="Delete"
+        android:paddingLeft="8sp"
+        android:paddingTop="7sp"
+        android:textColor="#4067B3"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/txtcddmsg"
+        android:layout_below="@+id/txtcddtitle"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:layout_margin="7sp"
+        android:textSize="18sp"
+        android:textColor="#FBFACC"
+        android:text="Do you want to delete this item ?"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txtcddmsg"
+        android:id="@+id/btncddcancel"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:background="@drawable/cd_background"
+        android:layout_margin="20dp"
+        android:textColor="#4067B3"
+        android:text="CANCEL"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/btncdddelete"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="0sp"
+        android:textSize="15sp"
+        android:layout_below="@+id/txtcddmsg"
+        android:layout_toLeftOf="@+id/btncddcancel"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cd_background"
+        android:textColor="#4067B3"
+        android:text="DELETE"/>
+</RelativeLayout>
